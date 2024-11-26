@@ -1,0 +1,8 @@
+<Sysmon schemaversion="0.1">
+   <EventFiltering>
+      <RuleGroup name="" groupRelation="or">
+         <ClipboardChange onmatch="include">
+         </ClipboardChange>
+      </RuleGroup>
+   </EventFiltering>
+</Sysmon>

@@ -1,0 +1,9 @@
+<Sysmon schemaversion="0.1">
+  <EventFiltering>
+    <RuleGroup name="" groupRelation="or">
+      <FileCreateStreamHash onmatch="include">
+        <TargetFilename condition="end with">.exe</TargetFilename>
+      </FileCreateStreamHash>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>

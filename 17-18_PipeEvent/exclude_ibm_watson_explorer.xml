@@ -1,0 +1,9 @@
+<Sysmon schemaversion="0.1">
+  <EventFiltering>
+    <RuleGroup name="" groupRelation="or">
+      <PipeEvent onmatch="exclude">
+        <PipeName condition="begin with">\Vivisimo Velocity</PipeName>
+      </PipeEvent>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>

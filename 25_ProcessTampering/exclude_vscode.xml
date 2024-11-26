@@ -1,0 +1,9 @@
+<Sysmon schemaversion="0.1">
+  <EventFiltering>
+    <RuleGroup name="" groupRelation="or">
+      <ProcessTampering onmatch="exclude">
+        <Image condition="is">C:\Program Files\Microsoft VS Code\Code.exe</Image>
+      </ProcessTampering>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>

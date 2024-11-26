@@ -1,0 +1,9 @@
+<Sysmon schemaversion="0.1">
+  <EventFiltering>
+    <RuleGroup name="" groupRelation="or">
+      <PipeEvent onmatch="include">
+        <PipeName name="technique_id=T1033,technique_name=System Owner/User Discovery" condition="begin with">\winreg</PipeName>        <!--also used in lateral movement-->
+      </PipeEvent>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>

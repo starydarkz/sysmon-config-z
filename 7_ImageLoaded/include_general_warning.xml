@@ -1,0 +1,9 @@
+<Sysmon schemaversion="0.1">
+   <EventFiltering>
+      <RuleGroup name="" groupRelation="or">
+         <ImageLoad onmatch="include">
+            <!--COMMENT:	Can cause high system load, disabled by default.-->
+         </ImageLoad>
+      </RuleGroup>
+   </EventFiltering>
+</Sysmon>

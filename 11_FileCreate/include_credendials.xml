@@ -1,0 +1,9 @@
+<Sysmon schemaversion="0.1">
+  <EventFiltering>
+    <RuleGroup name="" groupRelation="or">
+      <FileCreate onmatch="include">
+        <TargetFilename condition="contains all">C:\Users\;\.ssh\</TargetFilename>
+      </FileCreate>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>

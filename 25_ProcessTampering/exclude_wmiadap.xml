@@ -1,0 +1,9 @@
+<Sysmon schemaversion="0.1">
+  <EventFiltering>
+    <RuleGroup name="" groupRelation="or">
+      <ProcessTampering onmatch="exclude">
+        <Image condition="is">C:\Windows\System32\wbem\WMIADAP.exe</Image>
+      </ProcessTampering>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>

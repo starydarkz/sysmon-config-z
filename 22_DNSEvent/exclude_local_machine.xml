@@ -1,0 +1,11 @@
+<Sysmon schemaversion="0.1">
+  <!-- special thanks to @SwiftOnSecurity for this -->
+  <EventFiltering>
+    <RuleGroup name="" groupRelation="or">
+      <DnsQuery onmatch="exclude">
+        <QueryName condition="end with">.msftncsi.com</QueryName>        <!--Microsoft proxy detection | Microsoft default exclusion-->
+        <QueryName condition="end with">.localmachine</QueryName>
+      </DnsQuery>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>
